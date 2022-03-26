@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>沪深板块地域板块(XBHS.DY)</title>
+    <style>
+        .div1{
+            width: 150px;
+            height: auto;
+            position: fixed;
+            right: 10px;
+            top: 30%;
+            border: 1px black solid;
+        }
+    </style>
+</head>
+<body>
+    <h3>沪深板块地域板块(XBHS.DY)</h3>
+    <div class="div1">
+        <a href="#a1" >3001快照接口</a>
+        <br>
+        <a href="#a2" >3013静态快照接口</a>
+    </div>
+    <br>
+    <a name="a1">3001快照接口</a>
+    <table border="1">
+        <tr>
+          <th>字段id</th>
+          <th>字段名</th>
+          <th>字段中文名</th>
+          <th>放大倍数</th>
+          <th>备注</th>
+        </tr>
+        <tr>
+            <td>48</td>
+            <td>prod_code</td>
+            <td>股票代码</td>
+            <td>无</td>
+            <td>HQZQDM 证券代码</td>
+        </tr>
+        <tr>
+            <td>55</td>
+            <td>prod_name</td>
+            <td>证券名称</td>
+            <td>无</td>
+            <td>HQZQJC 证券简称</td>
+        </tr>
+        <tr>
+            <td>167</td>
+            <td>hq_type_code</td>
+            <td>类型代码</td>
+            <td>无</td>
+            <td>行情系统配置</td>
+        </tr>
+        <tr>
+            <td>10178</td>
+            <td>data_timestamp</td>
+            <td>时间戳（HHMMSSsss）</td>
+            <td>无</td>
+            <td>文件第一条记录：HQCJBS 存放当前时间 HHMMSS</td>
+        </tr>
+        <tr>
+            <td>20059</td>
+            <td>trade_mins</td>
+            <td>交易分钟数</td>
+            <td>无</td>
+            <td>计算：当前时间-开盘时间</td>
+        </tr>
+        <tr>
+            <td>10135</td>
+            <td>trade_status</td>
+            <td>交易状态</td>
+            <td>无</td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td>140</td>
+            <td>preclose_px</td>
+            <td>昨收价</td>
+            <td>1000</td>
+            <td>HQZRSP 昨日收盘价</td>
+        </tr>
+        <tr>
+            <td>10018</td>
+            <td>open_px</td>
+            <td>开盘价</td>
+            <td>1000</td>
+            <td>HQJRKP 今日开盘价</td>
+        </tr>
+        <tr>
+            <td>31</td>
+            <td>last_px</td>
+            <td>最新价</td>
+            <td>1000</td>
+            <td>HQZJCJ 最近成交价</td>
+        </tr>
+        <tr>
+            <td>332</td>
+            <td>high_px</td>
+            <td>最高价</td>
+            <td>1000</td>
+            <td>HQZGCJ 最高成交价</td>
+        </tr>
+        <tr>
+            <td>333</td>
+            <td>low_px</td>
+            <td>最低价</td>
+            <td>1000</td>
+            <td>HQZDCJ 最低成交价</td>
+        </tr>
+        <tr>
+            <td>50</td>
+            <td>wavg_px</td>
+            <td>加权平均价</td>
+            <td>1000</td>
+            <td>对于指数，均价实际为领先指标，目前支持的指数有：<br>
+                HSIHSI ， HSICEI <br>
+                HSICCI，DJI <br>
+                NDX，  IXIC <br>
+                SPX， N500LC</td>
+        </tr>
+        <tr>
+            <td>387</td>
+            <td>business_amount</td>
+            <td>总成交量</td>
+            <td>无</td>
+            <td>HQCJSL 成交数量</td>
+        </tr>
+        <tr>
+            <td>8504</td>
+            <td>business_balance</td>
+            <td>总成交额</td>
+            <td>无</td>
+            <td>HQCJJE 成交金额</td>
+        </tr>
+        <tr>
+            <td>20037</td>
+            <td>px_change</td>
+            <td>价格涨跌</td>
+            <td>1000</td>
+            <td>计算：最新价-昨收价</td>
+        </tr>
+        <tr>
+            <td>46</td>
+            <td>amplitude</td>
+            <td>振幅</td>
+            <td>100</td>
+            <td>计算:(最高价-最低价)/昨收价*100%</td>
+        </tr>
+        <tr>
+            <td>47</td>
+            <td>px_change_rate</td>
+            <td>涨跌幅</td>
+            <td>100</td>
+            <td>计算:(最新价-昨收价)/昨收价*100%</td>
+        </tr>
+        <tr>
+            <td>110</td>
+            <td>circulation_amount</td>
+            <td>流通股本</td>
+            <td>无</td>
+            <td>取自沪深财务文件financial_data.json</td>
+        </tr>
+        <tr>
+            <td>20063</td>
+            <td>total_shares</td>
+            <td>总股本</td>
+            <td>无</td>
+            <td>取自沪深财务文件financial_data.json</td>
+        </tr>
+        <tr>
+            <td>91</td>
+            <td>market_value</td>
+            <td>市值</td>
+            <td>无</td>
+            <td>计算：总股本*最新价</td>
+        </tr>
+        <tr>
+            <td>111</td>
+            <td>circulation_value</td>
+            <td>流通市值</td>
+            <td>无</td>
+            <td>计算：流通股本*最新价</td>
+        </tr>
+        <tr>
+            <td>97</td>
+            <td>turnover_ratio</td>
+            <td>换手率</td>
+            <td>100</td>
+            <td>计算：成交量/流通股本*100%</td>
+        </tr>
+        <tr>
+            <td>72</td>
+            <td>shares_per_hand</td>
+            <td>每手股数</td>
+            <td>无</td>
+            <td>行情系统配置：100</td>
+        </tr>
+        <tr>
+            <td>124</td>
+            <td>rise_count</td>
+            <td>上涨家数</td>
+            <td>无</td>
+            <td>上涨+下跌+平家=总股票数</td>
+        </tr>
+        <tr>
+            <td>125</td>
+            <td>fall_count</td>
+            <td>下跌家数</td>
+            <td>无</td>
+            <td>上涨+下跌+平家=总股票数</td>
+        </tr>
+        <tr>
+            <td>126</td>
+            <td>member_count</td>
+            <td>成员个数</td>
+            <td>无</td>
+            <td>上涨+下跌+平家=总股票数</td>
+        </tr>
+        <tr>
+            <td>1009</td>
+            <td>rise_first_grp</td>
+            <td>领涨股</td>
+            <td>无</td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td>48</td>
+            <td>——prod_code</td>
+            <td>证券代码</td>
+            <td>无</td>
+            <td>HQZQDM 证券代码</td>
+        </tr>
+        <tr>
+            <td>55</td>
+            <td>——prod_name</td>
+            <td>证券名称</td>
+            <td>无</td>
+            <td>HQZQJC 证券简称</td>
+        </tr>
+        <tr>
+            <td>167</td>
+            <td>——hq_type_code</td>
+            <td>证券品种代码</td>
+            <td>无</td>
+            <td>行情系统配置</td>
+        </tr>
+        <tr>
+            <td>31</td>
+            <td>——last_px</td>
+            <td>最新价</td>
+            <td>1000</td>
+            <td>HQZJCJ 最近成交价</td>
+        </tr>
+        <tr>
+            <td>47</td>
+            <td>——px_change_rate</td>
+            <td>涨跌幅</td>
+            <td>100</td>
+            <td>计算:（最新价-昨收价）/昨收价*100%</td>
+        </tr>
+        <tr>
+            <td>1010</td>
+            <td>fall_first_grp</td>
+            <td>领跌股</td>
+            <td>无</td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td>48</td>
+            <td>——prod_code</td>
+            <td>证券代码</td>
+            <td>无</td>
+            <td>HQZQDM 证券代码</td>
+        </tr>
+        <tr>
+            <td>55</td>
+            <td>——prod_name</td>
+            <td>证券名称</td>
+            <td>无</td>
+            <td>HQZQJC 证券简称</td>
+        </tr>
+        <tr>
+            <td>167</td>
+            <td>——hq_type_code</td>
+            <td>证券品种代码</td>
+            <td>无</td>
+            <td>行情系统配置</td>
+        </tr>
+        <tr>
+            <td>31</td>
+            <td>——last_px</td>
+            <td>最新价</td>
+            <td>1000</td>
+            <td>HQZJCJ 最近成交价</td>
+        </tr>
+        <tr>
+            <td>47</td>
+            <td>——px_change_rate</td>
+            <td>涨跌幅</td>
+            <td>100</td>
+            <td>计算:（最新价-昨收价）/昨收价*100%</td>
+        </tr>
+        <tr>
+            <td>47</td>
+            <td>min5_chgpct</td>
+            <td>五分钟涨速</td>
+            <td>100</td>
+            <td>计算：最新价相较于前5分钟的分时价格的涨跌幅</td>
+        </tr>
+        <tr>
+            <td>35</td>
+            <td>day5_vol</td>
+            <td>五日量</td>
+            <td>无</td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td>230</td>
+            <td>market_date</td>
+            <td>市场日期</td>
+            <td>无</td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td>20372</td>
+            <td>up_limit_count</td>
+            <td>涨停家数</td>
+            <td>无</td>
+            <td>当前快照时间点最新价=涨停价成分股个数</td>
+        </tr>
+        <tr>
+            <td>20373</td>
+            <td>touch_up_limit_count</td>
+            <td>触板涨停家数</td>
+            <td>无</td>
+            <td>当前快照时间点最高价=涨停价成分股个数</td>
+        </tr>
+        <tr>
+            <td>20374</td>
+            <td>st_up_limit_count</td>
+            <td>ST股涨停家数</td>
+            <td>无</td>
+            <td>当前快照时间点最新价=涨停价的ST类成分股个数 <br>证券简称含“ST”的即为ST股</td>
+        </tr>
+        <tr>
+            <td>20375</td>
+            <td>st_touch_up_limit_count</td>
+            <td>ST股触板涨停家数</td>
+            <td>无</td>
+            <td>当前快照时间点最高价=涨停价的ST类成分股个数</td>
+        </tr>
+        <tr>
+            <td>20376</td>
+            <td>down_limit_count</td>
+            <td>跌停家数</td>
+            <td>无</td>
+            <td>当前快照时间点最新价=跌停价成分股个数</td>
+        </tr>
+        <tr>
+            <td>20377</td>
+            <td>touch_down_limit_count</td>
+            <td>触板跌停家数</td>
+            <td>无</td>
+            <td>当前快照时间点最低价=跌停价成分股个数</td>
+        </tr>
+        <tr>
+            <td>20378</td>
+            <td>st_down_limit_count</td>
+            <td>ST股跌停家数</td>
+            <td>无</td>
+            <td>当前快照时间点最新价=跌停价的ST类成分股个数 <br>证券简称含“ST”的即为ST股</td>
+        </tr>
+        <tr>
+            <td>20379</td>
+            <td>st_touch_down_limit_count</td>
+            <td>ST股触板跌停家数</td>
+            <td>无</td>
+            <td>当前快照时间点最低价=跌停价的ST类成分股个数<br>证券简称含“ST”的即为ST股</td>
+        </tr>
+        <tr>
+            <td>55245</td>
+            <td>halt_count</td>
+            <td>停牌家数</td>
+            <td>无</td>
+            <td>&nbsp;</td>
+        </tr>
+    </table>
+    <br>
+    <a name="a2">3013静态快照接口</a>
+    <table border="1">
+        <tr>
+            <th>字段id</th>
+            <th>字段名</th>
+            <th>字段中文名</th>
+            <th>放大倍数</th>
+            <th>备注</th>
+          </tr>
+          <tr>
+              <td>48</td>
+              <td>prod_code</td>
+              <td>股票代码</td>
+              <td>无</td>
+              <td>HQZQDM 证券代码</td>
+          </tr>
+          <tr>
+              <td>167</td>
+              <td>hq_type_code</td>
+              <td>类型代码</td>
+              <td>无</td>
+              <td>HQZQDM 证券代码</td>
+          </tr>
+    </table>
+    <script type="text/javascript" src="canvas-nest.min.js"></script>
+</body>
+</html>

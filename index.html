@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>沪深市场类型</title>
+    <style>   
+       ul { 
+           margin: 0; 
+           padding: 0; 
+           list-style: none; 
+           width: 150px; 
+           border-bottom: 1px solid #ccc; 
+        }
+
+       ul li { 
+          position: relative; 
+       }
+
+       li ul { 
+           position: absolute; 
+           left: 150px;  
+           top: 0;
+           display: none; 
+        } 
+
+        ul li a {  
+           display: block; 
+           text-decoration: none; 
+           color: #777; 
+           background: #fff; 
+           padding: 5px; 
+           border: 1px solid #ccc;
+           border-bottom: 0; 
+        } 
+
+        * html ul li { float: left; height: 1%; } 
+        * html ul li a { height: 1%; }  
+        li:hover ul, li.over ul { display: block; }  
+
+        a:hover{
+            color:#f00;
+        }
+        
+        .div1{
+            float: left;
+        }
+        .div2{
+            width: 1500px;
+            height: 600px;
+            float: left;
+        }
+  
+  
+        .div2 iframe{
+            width: 1500px;
+            height: 1000px;
+        }
+    </style>
+</head>
+<body>
+    <!-- <h1 align="center" >沪深市场分类类型</h1> -->
+    <div class="div1">
+        <ul id="nav"> 
+            <li><a href="#">主页</a></li> 
+    
+            <li><a href="#">上海证券交易所</a> 
+            <ul> 
+                <li> <a href="ss\N.html" target="test" > 上证新股(N） </a> </li>
+                <li> <a href="ss\MRI.html" target="test" > 上证指数(MRI) </a> </li>
+                <li> <a href="ss\M.html" target="test"> 上证其他(M) </a> </li>
+                <li> <a href="ss\KSH.html" target="test"> 科创办(KSH) </a> </li>
+                <li> <a href="ss\EU.html" target="test"> 上证基金(EU) </a> </li>
+                <li> <a href="ss\ESB.html" target="test"> 上证B股(ESB) </a> </li>
+                <li> <a href="ss\ESA.M.html" target="test"> 主板A股(ESA.M) </a> </li>
+                <li> <a href="ss\ER.html" target="test"> 上证优先股(ER) </a> </li>
+                <li> <a href="ss\EM.SF.html" target="test"> 上证分级基金(EM.SF) </a> </li>
+                <li> <a href="ss\EM.LOF.html" target="test"> 上证LOF(EM.LOF) </a> </li>
+                <li> <a href="ss\EM.ETF.html" target="test"> 上证ETF(EM.ETF) </a> </li>
+                <li> <a href="ss\DB.REPO.html" target="test"> 上证债券回购(DB.REPO) </a> </li>
+                <li> <a href="ss\DB.GBF.html" target="test"> 上证国债(DB.GBF) </a> </li>
+                <li> <a href="ss\DB.CPF.html" target="test"> 上证公司债券(DB.CPF) </a> </li>
+                <li> <a href="ss\DB.CCF.html" target="test"> 上证可转债（DB.CCF） </a> </li>
+                <li> <a href="ss\DB.CBF.html" target="test"> 上证企业债券(DB.CBF) </a> </li>
+                <li> <a href="ss\D.html" target="test"> 上证债券(D) </a> </li>
+                <li> <a href="ss\CB.RET.html" target="test"> 上证公募REITs(CB.RET) </a> </li>
+            </ul> 
+            </li> 
+    
+            <li><a href="#">深圳证券交易所</a> 
+            <ul> 
+                <li> <a href="sz\N.html" target="test"> 深证新股(N) </a> </li>
+                <li> <a href="sz\MRI.html" target="test"> 深证指数(MRI) </a> </li>
+                <li> <a href="sz\M.html" target="test"> 深证其他(M) </a> </li>
+                <li> <a href="sz\ESB.html" target="test"> 深证B股(ESB) </a> </li>
+                <li> <a href="sz\ESA.M.html" target="test"> 主板A股(ESA.M) </a> </li>
+                <li> <a href="sz\ESA.GEM.html" target="test"> 深证创业板(ESA.GEM) </a> </li>
+                <li> <a href="sz\EM.LOF.html" target="test"> 深证LOF(EM.LOF)</a> </li>
+                <li> <a href="sz\EM.ETF.html" target="test"> 深证ETF(EM.ETF) </a> </li>
+                <li> <a href="sz\EM.CEF.html" target="test"> 深证封闭式基金(EM.CEF) </a> </li>
+                <li> <a href="sz\DB.REPO.html" target="test"> 深证债券回购(DB.REPO) </a> </li>
+                <li> <a href="sz\DB.GBF.html" target="test"> 深证国债(DB.GBF) </a> </li>
+                <li> <a href="sz\DB.CPF.html" target="test"> 深证公司债券(DB.CPF) </a> </li>
+                <li> <a href="sz\DB.CCF.html" target="test"> 深证可转债(DB.CCF) </a> </li>
+                <li> <a href="sz\DB.CBF.html" target="test"> 深证企业债券(DB.CBF) </a> </li>
+                <li> <a href="sz\D.html" target="test"> 深证债券(D) </a> </li>
+                <li> <a href="sz\CB.RET.html" target="test"> 深证公募REITs(CB.RET) </a> </li> 
+            </ul> 
+            </li> 
+    
+            <li><a href="#">股份转让</a> 
+            <ul> 
+                <li> <a href="neeq\ZSZR.html" target="test"> 做市转让(ZSZR) </a> </li>
+                <li> <a href="neeq\MRI.html" target="test"> 股转指数(MRI) </a> </li>
+                <li> <a href="neeq\LXJJ.html" target="test"> 连续竞价(LXJJ) </a> </li>
+                <li> <a href="neeq\LWTS.html" target="test"> 两网及退市(LWTS) </a> </li>
+                <li> <a href="neeq\JJZR.html" target="test"> 竞价转让(JJZR) </a> </li>
+                <li> <a href="neeq\ER.html" target="test"> 优先股(ER) </a> </li> 
+            </ul> 
+            </li> 
+
+            <li><a href="#">沪港通(XHKG-SS) </a>
+                <ul>
+                    <li> <a href="hsg\XHKG-SS\GME.html" target="test"> 创业板(GME) </a> </li>
+                    <li> <a href="hsg\XHKG-SS\ES.html" target="test"> 股票(ES) </a> </li>
+                </ul>
+            </li>
+
+            <li><a href="#">深港通(XHKG-SZ)</a>
+                <ul>
+                    <li> <a href="hsg\XHKG-SZ\ES.html" target="test"> 股票(ES) </a> </li>
+                </ul>
+            </li>
+
+            <li><a href="#">沪深股通余额市场(ML2HK)</a>
+                <ul>
+                    <li> <a href="hsg\ML2HK\MRI.html" target="test"> 指数(MRI) </a> </li>
+                </ul>
+            </li>
+
+            <li><a href="#">港股通余额市场(HK2ML)</a>
+                <ul>
+                    <li> <a href="hsg\HK2ML\MRI.html" target="test"> 指数(MRI) </a> </li>
+                </ul>
+            </li>
+    
+            <li><a href="#">沪深板块(XBHS)</a>
+                <ul>
+                    <li> <a href="bk\XBHS\ZS.html" target="test"> 指数板块(ZS) </a> </li>
+                    <li> <a href="bk\XBHS\ZJHHY.html" target="test"> 证监会行业板块(ZJHHY) </a> </li>
+                    <li> <a href="bk\XBHS\HY.html" target="test"> 行业板块(HY) </a> </li>
+                    <li> <a href="bk\XBHS\GN.html" target="test"> 概念板块(GN) </a> </li>
+                    <li> <a href="bk\XBHS\DY.html" target="test"> 地域板块(DY) </a> </li>
+                </ul>
+            </li>
+
+            <li><a href="#">港股板块(XBHK)</a>
+                <ul>
+                    <li> <a href="bk\XBHK\ZZHY.html" target="test"> 中证指数行业分类(ZZHY) </a> </li>
+                    <li> <a href="bk\XBHK\SGT.html" target="test"> 深港通(SGT) </a> </li>
+                    <li> <a href="bk\XBHK\LCG.html" target="test"> 蓝筹股(LCG) </a> </li>
+                    <li> <a href="bk\XBHK\HSI.html" target="test"> 恒生指数(HSI) </a> </li>
+                    <li> <a href="bk\XBHK\HSHY.html" target="test"> 恒生行业分类(HSHY) </a> </li>
+                    <li> <a href="bk\XBHK\HGT.html" target="test"> 沪港通(HGT) </a> </li>
+                    <li> <a href="bk\XBHK\HCG.html" target="test"> 红筹股(HCG) </a> </li>
+                    <li> <a href="bk\XBHK\GQG.html" target="test"> 国企股(GQG) </a> </li>
+                </ul>
+            </li>
+
+            <li><a href="#">美股板块(XBUS)</a>
+                <ul>
+                    <li> <a href="bk\XBUS\ZG.html" target="test"> 中概股(ZG) </a> </li>
+                    <li> <a href="bk\XBUS\MX.html" target="test"> 明星股(MX) </a> </li>
+                    <li> <a href="bk\XBUS\MRI.html" target="test"> 美股指数(MRI) </a> </li>
+                </ul>
+            </li>
+
+            <li><a href="http://demo.haoji.me/2017/02/08-js-xlsx/" target="test">读取excel</a></li>
+    
+        </ul> 
+    </div>
+    
+    <div class="div2">
+        <iframe  name="test" ></iframe> 
+    </div>
+</body>
+</html>
